@@ -3,7 +3,7 @@
 ## Reddit Scraping for Google LLM and Gemini
 
 ```
-File name: reddit_analysis.py
+File name: reddit_scraper.py
 ```
 
 This Python script is designed to scrape Reddit posts and comments from various subreddits related to Google LLM and Gemini. It uses the Reddit API, via the PRAW (Python Reddit API Wrapper) library, to gather relevant data from specified subreddits and search terms. The scraped data is then saved to a CSV file for further analysis.

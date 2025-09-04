@@ -1,13 +1,20 @@
+import os
 import praw
 import pandas as pd
 import prawcore
 
-client_id = 'HFX2IOGvyWk-KYZSVvpAgA'
-client_secret = 'AQ_xg-7U881dYXXVT-6_pYZPHESE3w'
-user_agent = 'YReddit Scraper v1.0'
+client_id = os.getenv("REDDIT_CLIENT_ID")
+client_secret = os.getenv("REDDIT_CLIENT_SECRET")
+user_agent = "Reddit Scraper v1.0"
 
-reddit = praw.Reddit(client_id=client_id, client_secret=client_secret, 
-user_agent=user_agent)
+if not client_id or not client_secret:
+    raise RuntimeError("Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET env vars before running.")
+
+reddit = praw.Reddit(
+    client_id=client_id,
+    client_secret=client_secret,
+    user_agent=user_agent,
+)
 
 subreddits = ['MachineLearning', 'OpenAI', 
 'LanguageTechnology', 'Google']

@@ -2,19 +2,25 @@
 
 ## Reddit Scraping for Google LLM and Gemini
 
-```
-File name: reddit_scraper.py
-```
+This project scrapes Reddit posts and comments from subreddits related to **Google LLM** and **Gemini**, then performs sentiment analysis and visualization.
 
-This Python script is designed to scrape Reddit posts and comments from various subreddits related to Google LLM and Gemini. It uses the Reddit API, via the PRAW (Python Reddit API Wrapper) library, to gather relevant data from specified subreddits and search terms. The scraped data is then saved to a CSV file for further analysis.
+---
 
-```
-File name: reddit_analysis.py
-```
-This Python script is designed to analyze and visualize data scraped from Reddit, specifically posts and comments related to Google LLM and Gemini, which have already been saved into a CSV file
+## Files
 
-```
-File name: reddit_analysis_full.py
-```
+- **reddit_scraper.py**  
+  Scrapes posts and comments from selected subreddits using the Reddit API (PRAW) and saves them into a CSV file.
 
-This Python script extends the functionality of reddit_analysis.py by providing a more comprehensive analysis and additional visualizations of the data scraped from Reddit.
+- **reddit_analysis.py**  
+  Basic analysis of the scraped data: top posts, counts, sentiment distribution, and word cloud.
+
+- **reddit_analysis_full.py**  
+  Extended analysis with additional visualizations such as sentiment over time, average sentiment by subreddit, and positive/negative word clouds.
+
+---
+
+## Requirements
+
+Install dependencies:
+```bash
+pip install -r requirements.txt

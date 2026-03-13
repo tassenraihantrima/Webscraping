@@ -64,7 +64,7 @@ subreddit_post_sentiment = df.groupby('url')['post_sentiment'].mean()
 subreddit_post_sentiment.plot(kind='bar', title='Average Post Sentiment by Subreddit')
 plt.xlabel('Subreddit')
 plt.ylabel('Average Sentiment')
-plt.xticks(rotation=45, ha='right') # Added slight rotation for better readability
+plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
 plt.show()
 

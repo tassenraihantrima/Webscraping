@@ -3,3 +3,5 @@ matplotlib
 textblob
 wordcloud
 praw
+transformers
+torch

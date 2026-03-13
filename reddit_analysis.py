@@ -35,7 +35,7 @@ def get_transformer_sentiment(text):
         result = sentiment_pipeline(text)[0]
         score = result['score']
         
-        # Convert label to a polarity scale (-1.0 to 1.0) to match your previous setup
+        # Convert label to a polarity scale (-1.0 to 1.0) 
         if result['label'] == 'POSITIVE':
             return score
         elif result['label'] == 'NEGATIVE':

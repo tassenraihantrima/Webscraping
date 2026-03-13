@@ -4,7 +4,7 @@ from transformers import pipeline
 from wordcloud import WordCloud
 
 # Load the data
-df = pd.read_csv('reddit_google_llm_gemini.csv')
+df = pd.read_csv('reddit_google_llm_gemini.csv',nrows=2000)
 
 # Clean the data
 df.drop_duplicates(inplace=True)

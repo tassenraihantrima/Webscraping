@@ -1,6 +1,6 @@
 # Webscraping
 
-## Reddit Scraping for Google LLM and Gemini
+## Reddit Scraping for Gemini
 
 This project scrapes over 27,000 Reddit entries to analyze how people feel about **Google Gemini**. It compares a basic "word-matching" method with a smarter **AI (DistilBERT)** model.
 
